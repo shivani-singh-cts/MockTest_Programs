@@ -2,11 +2,11 @@ package com.mock.test;
 
 public class MedianOfSortedArrays {
 
-	static int findMedian(int[] arr1, int[] arr2) {
+	static double findMedian(int[] arr1, int[] arr2) {
 		int i =0, j = 0;
 		int n = arr1.length;
 		int m = arr2.length;
-		int m1 = -1, m2 = -1;
+		double m1 = -1D, m2 = -1D;
 		//Odd case
 		if((n+m) % 2 != 0) {
 			for(int k= 0; k<= (n+m)/2; k++) {
@@ -43,7 +43,7 @@ public class MedianOfSortedArrays {
 		}
 	}
 	public static void main(String[] args) {
-		int[] arr1 = {1, 12, 15, 26, 38};
+		int[] arr1 = {1};
 		int[] arr2 = {2, 13, 24};
 		
 		System.out.println("Median of arrays are: " + findMedian(arr1, arr2));

@@ -10,14 +10,14 @@ class MedianOfSortedArraysTest {
 	void test() {
 		int[] arr1 = {1, 12, 15, 26, 38};
 		int[] arr2 = {2, 13, 24};
-		assertEquals(14, MedianOfSortedArrays.findMedian(arr1, arr2));
+		assertEquals(14D, MedianOfSortedArrays.findMedian(arr1, arr2));
 	}
 	
 	@Test
 	void testEmptyArray() {
 		int[] arr1 = {};
 		int[] arr2 = {2, 13, 24};
-		assertEquals(13, MedianOfSortedArrays.findMedian(arr1, arr2));
+		assertEquals(13D, MedianOfSortedArrays.findMedian(arr1, arr2));
 	}
 	
 }
